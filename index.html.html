@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Café Mbarete</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6ec;
+    color: #3b2a20;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #6f4e37;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+  }
+  section {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    border-bottom: 2px solid #6f4e37;
+    padding-bottom: 5px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    background-color: #fff;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px auto;
+  }
+  .promo {
+    background-color: #f3e5d0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+  }
+  button {
+    background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  button:hover {
+    background-color: #543a29;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    color: #7a6a5c;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Café Mbarete</h1>
+  <p>El mejor café de la ciudad, hecho con pasión desde 2026.</p>
+</header>
+
+<section>
+  <p>
+    Bienvenido a Café Mbarete, un lugar acogedor donde podés disfrutar
+    de café recién tostado, repostería artesanal y un ambiente ideal
+    para relajarte o trabajar.
+  </p>
+</section>
+
+<section>
+  <h2>Nuestro Menú</h2>
+  <ul>
+    <li><span>Café Espresso</span><span>5.000gs</span></li>
+    <li><span>Cappuccino</span><span>7.500gs</span></li>
+    <li><span>Latte Vainilla</span><span>8.000gs</span></li>
+    <li><span>Croissant</span><span>4.500gs</span></li>
+    <li><span>Torta de Chocolate</span><span>6.500gs</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Nuestro Espacio</h2>
+  <img src="foto-cafe.jpg" alt="Interior de la cafetería">
+</section>
+
+<section>
+  <h2>Promociones</h2>
+  <div class="promo">
+    <p><strong>2x1 en Cappuccinos</strong> todos los sábados de 15hs a 18hs.</p>
+    <p><strong>20% de descuento</strong> a estudiantes universitarios.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2026 Café Mbarete. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
